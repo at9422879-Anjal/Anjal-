@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anu Tutorials | Web Designing Sikho</title>
+    <style>
+        /* 🌸 Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff66b2, #ff99cc);
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        nav {
+            margin-top: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover { text-decoration: underline; color: #ffe6f0; }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeUp 1s ease-in;
+        }
+
+        section h2 {
+            color: #ff4da6;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        section p {
+            max-width: 750px;
+            margin: 0 auto 15px;
+            line-height: 1.7;
+        }
+
+        .photo {
+            width: 180px;
+            border-radius: 50%;
+            margin: 15px auto;
+            display: block;
+            border: 3px solid #ff99cc;
+        }
+
+        footer {
+            background-color: #ffb6c1;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        /* 🌸 Button */
+        .btn {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background-color: #ff3385; }
+
+        /* 🌸 Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 🌸 Topic boxes */
+        .topic-box {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            transition: transform 0.3s;
+        }
+
+        .topic-box:hover { transform: scale(1.02); }
+
+        .code-box {
+            background: #ffe6f0;
+            text-align: left;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌸 Web Designing Sikho 🌸</h1>
+        <p>HTML • CSS • JavaScript Easy Tutorials by Anu</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#js">JavaScript</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 🏠 Home -->
+    <section
+        <h2>Welcome to Anu Tutorials!</h2>
+        <p>Yahan aap step-by-step web designing seekh sakte ho — HTML, CSS, aur JavaScript ke sath. Har topic ko simple explanation aur live example ke sath samjhaya gaya hai 💻✨</p>
+    </section>
+
+    <!-- 🙋‍♀️ About -->
+    <section id="about" style="background-color: #ffe6f0;">
+        <h2>About Me</h2>
+        <p>Hi, main Anu hu 👋. Mujhe websites design karna aur sikhana pasand hai.  
+        Is website ka goal hai aapko **free me web designing** sikhana taaki aap apni website bana sako!</p>
+    </section>
+
+    <!-- 💡 HTML Tutorial -->
+    <section id="html">
+        <h2>HTML Kya Hai?</h2>
+        <div class="topic-box">
+            <p><b>HTML</b> ka full form hai <b>HyperText Markup Language</b>. Ye web page ka structure banata hai.</p>
+            <div class="code-box">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Meri Website&lt;/title&gt;<br>
+                &nbsp;&lt;/head&gt;<br>
+                &nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+                &nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <p>🪄 HTML ke main tags hote hain: &lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, &lt;a&gt;, &lt;table&gt; etc.</p>
+        </div>
+    </section>
+
+    <!-- 🎨 CSS Tutorial -->
+    <section id="css" style="background-color: #ffe6f0;">
+        <h2>CSS Kya Hai?</h2>
+        <div class="topic-box">
+            <p><b>CSS</b> ka full form hai <b>Cascading Style Sheets</b>. Isse hum web page ko design aur color dete hain 🎨.</p>
+            <div class="code-box">
+                h1 { color: hotpink; text-align: center; } <br>
+                p { font-size: 18px; color: gray; }
+            </div>
+            <p>🎀 CSS se aap background, font, layout aur animations sab design kar sakte ho.</p>
+        </div>
+    </section>
+
+    <!-- ⚡ JavaScript Tutorial -->
+    <section id="js">
+        <h2>JavaScript Kya Hai?</h2>
+        <div class="topic-box">
+            <p><b>JavaScript</b> ek programming language hai jo web page me action add karti hai — jaise alert box, button click, ya form validation.</p>
+            <div class="code-box">
+                &lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;
+            </div>
+            <p>⚡ JS se aap interactive games, forms aur dynamic content bana sakte ho.</p>
+        </div>
+    </section>
+
+    <!-- 📬 Contact -->
+    <section id="contact" style="background-color: #ffe6f0;">
+        <h2>Contact Me</h2>
+        <p>Agar aapko web designing me help chahiye, niche click kare 👇</p>
+        <button class="btn" onclick="alert('Email: anu@example.com')">Contact Now</button>
+    </section>
+section>
+      <h2>
+        Python language Kya hai?
+      </h2>
+            </div>
+            <p><b>Python se bohot saare kaam kiye ja sakte hain:
+✅ Website banana
+(Backend development – Django, Flask)
+✅ App/Software banana
+✅ Data Science, AI, Machine Learning
+✅ Automation
+(Repeat hone wale kaam computer se karwana)
+✅ Game Development
+(Pygame)</b></p>
+<h2> <b>Python kyu famous hai?</b></h2>
+
+<p>⭐ Easy language – English jaise simple words ka use hota hai
+⭐ Fast learning – Beginners ke liye best
+⭐ Free & Open-source
+⭐ Har field me kaam aati
+⭐ Large community – Help milna aasaan
+</p>
+<h><b> Python code kaisa hota hai? (Example)</b></h>
+<p> print("Hello, World!")</p>
+<p>Iss code se screen par “Hello, World!” print ho jaata hai.
+Agar chaho, main tumhe Python complete shuru se end tak simple language me sikha sakta/ sakti hoon.
+Kya tum Python shuru karna chahte ho? </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Anu Tutorials | Designed with 💖 by Anu</p>
+
+
+    <footer>
+        <p>© 2025 Anu Tutorials | Designed with 💖 by Anu</p>
+    </footer>
+
+
+</body>
+</html>
