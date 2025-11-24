@@ -52,54 +52,63 @@
 
 </body>
 </html>
-<!DOCTYPE>
 
-<html>
-<ut-lang-en>
-    <title>makeup</title>
-    <head>
-        
-    </head>
-     <body>
 
-<div class="container">
-    <header>
-      <div id="logo">💄</div> <!-- emoji + id -->
-      <div>
-        <h1 class="title">Simple Makeup</h1> <!-- class -->
-        <div class="subtitle">Asaan makeup tips for daily look</div>
-      </div>
-    </header>
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <title>ID aur Class Example</title>
+  <style>
+    /* id selector */
+    #main-title {
+      color: deeppink;
+      text-align: center;
+      margin-top: 20px;
+    }
 
-    <div class="section" id="about">
-      <h2>About</h2>
-      <p>Yeh ek simple page hai jisme basic makeup tips diye gaye hain. Aap isse edit kar sakti hain — text badlo, photos badlo.</p>
-    </div>
+    /* class selector (applied to multiple elements) */
+    .card {
+      border: 1px solid #ccc;
+      padding: 12px;
+      border-radius: 8px;
+      width: 200px;
+      display: inline-block;
+      margin: 8px;
+      text-align: center;
+    }
 
-    <div class="section" id="tips">
-      <h2>Top 3 Tips</h2>
-      <ul>
-        <li>1. Primer lagao agar make-up longer chalana hai.</li>
-        <li>2. Halka foundation ya BB cream use karo for natural look.</li>
-        <li>3. Lip balm + thoda gloss for fresh lips.</li>
-      </ul>
-    </div>
+    /* multiple classes example */
+    .card.highlight {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body>
 
-    <div class="section" id="gallery">
-      <h2>Gallery</h2>
-      <!-- Replace the image URL with your own image file when you upload -->
-      <img src="https://via.placeholder.com/600x350?text=Your+Makeup+Photo" alt="Makeup example">
-    </div>
+  <!-- id use (unique) -->
+  <h1 id="main-title">Meri Website</h1>
 
-    <div class="section" id="contact">
-      <h2>Contact</h2>
-      <p>Agar aap chahen to yahan apna email dal ke contact form bana sakte hain.</p>
-      <button class="btn" onclick="alert('Thank you!')">Message bheje</button>
-    </div>
+  <!-- class use (multiple elements) -->
+  <div class="card">Product 1</div>
+  <div class="card highlight">Product 2 (highlighted)</div>
+  <div class="card">Product 3</div>
 
-  </div>
+  <!-- ek element me id aur class dono ho sakte hain -->
+  <div id="special" class="card highlight">Special Item</div>
 
+  <script>
+    // JavaScript se id use karna (unique)
+    const title = document.getElementById('main-title');
+    title.addEventListener('click', () => alert('Title pe click kiya!'));
+
+    // class se multiple elements access karna
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((c, i) => {
+      c.addEventListener('mouseover', () => c.style.backgroundColor = '#fafafa');
+      c.addEventListener('mouseout', () => c.style.backgroundColor = '');
+    });
+  </script>
 </body>
 </html>
-Kuch chhote notes (bahut hi short):
-
