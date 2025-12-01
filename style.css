@@ -1,4 +1,5 @@
 /* GLOBAL */
+<style>
 body {
     margin: 0;
     padding: 0;
@@ -144,3 +145,4 @@ h1, h2 {
     color: white;
     margin-top: 50px;
 }
+</style>
