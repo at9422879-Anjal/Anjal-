@@ -7,16 +7,16 @@
        }
        
     h1,h2,h3{color: black;
-              font-size:40px;
+              font-size:50px;
     }
     
 
     div.class{
         background-color:lightblue;
         color: white;
-        font-size:30px;
+        font-size:40px;
         width:fit-content;
-        margin:50px;
+        margin:30px;
 }
 
 
@@ -44,7 +44,7 @@ nav a{
 nav a:hover{
          color:white;
          transform:translateX(100px)
-         animation:slideln 0.8s ease forwards;
+         animation:slideln 0.20s ease forwards;
          
 }
 
@@ -76,12 +76,12 @@ nav a:hover{
 
      img{
     
-    background-cover;
-    width:900px;
+    background-cover;     
+    width:70%;
     height:auto;
     margin:auto;
     display:block;
-    floting:right     
+        
          
 
     }
