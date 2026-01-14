@@ -125,10 +125,7 @@ nav a:hover{
       color:white;
      }
     
-.dark.dark-btn {
-    background-color:green;
-    color:black;
-}
+
 textarea{width:100%;
          height:120px;
          padding:10px;
