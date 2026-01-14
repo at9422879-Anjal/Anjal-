@@ -7,7 +7,7 @@
 #homePage:target~ #formPage{
     display:none;
 }
-.btn{
+.btn {
     padding:10px 20px;
     background-color:hotpink;
     color:white;
@@ -109,7 +109,7 @@ nav a:hover{
         
     }
 
-.dark-btn{
+.dark-btn {
     padding:15px 30px;
     font-size:18px;
     border-radius:10px;
@@ -125,8 +125,8 @@ nav a:hover{
       color:white;
      }
     
-.dark.dark-btn{
-    background-color:white;
+.dark.dark-btn {
+    background-color:green;
     color:black;
 }
 textarea{width:100%;
