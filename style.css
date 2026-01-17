@@ -137,11 +137,11 @@ button{
     border-radius:10px;
     border:none;
     cursor:pointer;
-    backgrounde-color:hotpink;
+    backgrounde-color:black;
     color:white;
     position:fixed;
     top:15px;
-    right:15px;
+    left:15px;
     
 }
 
