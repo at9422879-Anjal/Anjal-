@@ -11,6 +11,23 @@
     <p>This is dark mode example</p>
 
     <button onclick="toggleDark()">Dark Mode</button>
+    <h1>Live Character Counter</h1>
+    <h2>Write your message</h2>
+
+    <textarea id="textBox" maxlength="200" placeholder="Type something..."></textarea>
+
+    <div class="counter">
+        Characters: <span id="count">0</span> / 200
+    </div>
+
+    <script>
+        const textbox = document.getElementById("textBox");
+        const count = document.getElementById("count");
+
+        textbox.addEventListener("input", function () {
+            count.textContent = textbox.value.length;
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
