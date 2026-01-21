@@ -84,3 +84,80 @@ function reset(){
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project – Live Character Counter</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f6f9;
+    padding:40px;
+    text-align:center;
+}
+
+.counter-box{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+textarea{
+    width:100%;
+    height:120px;
+    font-size:16px;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.counter{
+    margin-top:10px;
+    font-weight:bold;
+    font-size:18px;
+    color:#0077cc;
+}
+
+.back{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#0077cc;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="counter-box">
+    <h2>Live Character Counter</h2>
+
+    <textarea id="textBox" maxlength="200"
+    placeholder="Type something..."></textarea>
+
+    <div class="counter">
+        Characters: <span id="count">0</span>/200
+    </div>
+
+    <a href="new_project.html" class="back">⬅ Go Back</a>
+</div>
+
+<script>
+let textBox = document.getElementById("textBox");
+let count = document.getElementById("count");
+
+textBox.addEventListener("input", function(){
+    count.innerText = textBox.value.length;
+});
+</script>
+
+</body>
+</html>
