@@ -3,73 +3,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Project 4 – Count Case</title>
-
-<style>
-body{
-    font-family: Arial;
-    text-align: center;
-    background: lightblue;
-    padding: 50px;
-}
-
-.counter-box{
-    background: white;
-    padding: 30px;
-    max-width: 400px;
-    margin: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-h1{
-    font-size: 50px;
-    color: #0077cc;
-}
-
-button{
-    padding: 12px 25px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.add{
-    background: green;
-    color: white;
-}
-
-.reset{
-    background: red;
-    color: white;
-}
-
-.back{
-    background: #0077cc;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-}
-</style>
-</head>
-
-<body>
-
-<div class="counter-box">
-    <h2>Project 4 – Count Case</h2>
-    <h1 id="count">0</h1
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
 <title>Project – Live Character Counter</title>
 
 <style>
 body{
     font-family: Arial;
-    background:#f4f6f9;
+    background:lightblue;
     padding:40px;
     text-align:center;
 }
@@ -123,7 +62,7 @@ textarea{
         Characters: <span id="count">0</span>/200
     </div>
 
-    <a href="new_project.html" class="back">⬅ Go Back</a>
+    
 </div>
 
 <script>
@@ -134,6 +73,8 @@ textBox.addEventListener("input", function(){
     count.innerText = textBox.value.length;
 });
 </script>
+    <button onclick="window.location='newproject.html'">⬅ Go Back</button>
+
 
 </body>
 </html>
