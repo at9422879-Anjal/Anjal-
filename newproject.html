@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,10 +29,9 @@ body{
 
 <h1>Our Projects</h1>
 
-
+<!-- 🎵 Background Music -->
 <audio id="bgMusic" loop>
-    <source src="music.mp3." type="audio/mpeg">
-    
+    <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <button class="btn" onclick="openProject('project_1.html')">Project 1</button>
@@ -51,8 +51,11 @@ body{
 <script>
 function openProject(page){
     let music = document.getElementById("bgMusic");
-    music.play();          
-    setTimeout(()              
+    music.play();   // 🎵 music start
+
+    setTimeout(function(){
+        window.location = page;   // project open
+    }, 300);
 }
 </script>
 
