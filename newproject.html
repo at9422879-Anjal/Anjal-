@@ -2,12 +2,14 @@
 <html>
 <head>
 <title>Our Projects</title>
-     <style>
-     body{
+
+<style>
+body{
     font-family:Arial;
     text-align:center;
     background:lightblue;
 }
+
 .btn{
     padding:35px 30px;
     margin:20px;
@@ -26,18 +28,35 @@
 
 <h1>Our Projects</h1>
 
-<button class="btn" onclick="window.location='project_1.html'">Project 1</button>
-<button class="btn" onclick="window.location='project_2.html'">Project 2</button>
-<button class="btn" onclick="window.location='project_3.html'">Project 3</button>
-<button class="btn" onclick="window.location='project_4.html'">Project 4</button>
-<button class="btn" onclick="window.location='project_5.html'">Project 5</button>  
-<button class="btn" onclick="window.location='project_6.html'">Project 6</button>    
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3.mp3" type="audio/mpeg">
+    
+</audio>
+
+<button class="btn" onclick="openProject('project_1.html')">Project 1</button>
+<button class="btn" onclick="openProject('project_2.html')">Project 2</button>
+<button class="btn" onclick="openProject('project_3.html')">Project 3</button>
+<button class="btn" onclick="openProject('project_4.html')">Project 4</button>
+<button class="btn" onclick="openProject('project_5.html')">Project 5</button>
+<button class="btn" onclick="openProject('project_6.html')">Project 6</button>
+<button class="btn" onclick="openProject('project_7.html')">Project 7</button>
 
 <br><br>
 
 <button class="btn" onclick="window.location='index.html'">
 ⬅ Back to Home
 </button>
+
+<script>
+function openProject(page){
+    let music = document.getElementById("bgMusic");
+    music.play();          
+    setTimeout(()=>{
+        window.location = page;
+    },300);                
+}
+</script>
 
 </body>
 </html>
